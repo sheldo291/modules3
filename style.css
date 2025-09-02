@@ -1,0 +1,109 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f4f6f8;
+    padding: 20px;
+}
+
+/* Container */
+body > * {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Header with logo and release date */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #004080;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    max-height: 60px;
+    height: auto;
+    width: auto;
+}
+
+header .release-date {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Sidebar contact info */
+aside {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    width: 250px;
+    float: right;
+    margin: 0 0 20px 20px;
+    font-size: 0.9rem;
+}
+
+/* Headings and article text */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+article p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Section inside article */
+article section {
+    background: #f9f9f9;
+    border-left: 4px solid #004080;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+    background: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Clear float after aside */
+article::after {
+    content: "";
+    display: block;
+    clear: both;
+}
